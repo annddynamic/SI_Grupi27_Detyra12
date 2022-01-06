@@ -1,0 +1,12 @@
+C:\Users\BUTON\source\repos\PDFSignature\Projekti3\obj\Debug\Projekti3.csprojAssemblyReference.cache
+C:\Users\BUTON\source\repos\PDFSignature\Projekti3\obj\Debug\Projekti3.Form1.resources
+C:\Users\BUTON\source\repos\PDFSignature\Projekti3\obj\Debug\Projekti3.Properties.Resources.resources
+C:\Users\BUTON\source\repos\PDFSignature\Projekti3\obj\Debug\Projekti3.csproj.GenerateResource.cache
+C:\Users\BUTON\source\repos\PDFSignature\Projekti3\bin\Debug\Projekti3.exe.config
+C:\Users\BUTON\source\repos\PDFSignature\Projekti3\bin\Debug\Projekti3.exe
+C:\Users\BUTON\source\repos\PDFSignature\Projekti3\bin\Debug\Projekti3.pdb
+C:\Users\BUTON\source\repos\PDFSignature\Projekti3\obj\Debug\Projekti3.exe
+C:\Users\BUTON\source\repos\PDFSignature\Projekti3\obj\Debug\Projekti3.pdb
+C:\Users\BUTON\source\repos\PDFSignature\Projekti3\bin\Debug\Aspose.PDF.dll
+C:\Users\BUTON\source\repos\PDFSignature\Projekti3\bin\Debug\Aspose.PDF.xml
+C:\Users\BUTON\source\repos\PDFSignature\Projekti3\obj\Debug\Projekti3.csproj.CopyComplete
