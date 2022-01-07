@@ -37,14 +37,15 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.verifiedText = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(193, 105);
+            this.button1.Location = new System.Drawing.Point(193, 152);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(181, 44);
+            this.button1.Size = new System.Drawing.Size(187, 44);
             this.button1.TabIndex = 1;
             this.button1.Text = "Ngarko PDF ";
             this.button1.UseVisualStyleBackColor = true;
@@ -52,7 +53,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(193, 178);
+            this.button2.Location = new System.Drawing.Point(193, 219);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(181, 44);
             this.button2.TabIndex = 2;
@@ -68,7 +69,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(190, 240);
+            this.label1.Location = new System.Drawing.Point(190, 293);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(154, 17);
             this.label1.TabIndex = 4;
@@ -76,7 +77,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(193, 339);
+            this.button3.Location = new System.Drawing.Point(193, 396);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(157, 53);
             this.button3.TabIndex = 5;
@@ -86,7 +87,7 @@
             // 
             // Password
             // 
-            this.Password.Location = new System.Drawing.Point(193, 287);
+            this.Password.Location = new System.Drawing.Point(193, 338);
             this.Password.Name = "Password";
             this.Password.Size = new System.Drawing.Size(187, 22);
             this.Password.TabIndex = 6;
@@ -94,7 +95,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(594, 105);
+            this.button4.Location = new System.Drawing.Point(597, 152);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(235, 44);
             this.button4.TabIndex = 7;
@@ -104,9 +105,9 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(594, 180);
+            this.button5.Location = new System.Drawing.Point(594, 221);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(232, 42);
+            this.button5.Size = new System.Drawing.Size(238, 42);
             this.button5.TabIndex = 8;
             this.button5.Text = "Verifiko";
             this.button5.UseVisualStyleBackColor = true;
@@ -114,11 +115,24 @@
             // 
             // verifiedText
             // 
-            this.verifiedText.Location = new System.Drawing.Point(594, 264);
+            this.verifiedText.Location = new System.Drawing.Point(594, 290);
             this.verifiedText.Multiline = true;
             this.verifiedText.Name = "verifiedText";
-            this.verifiedText.Size = new System.Drawing.Size(230, 45);
+            this.verifiedText.Size = new System.Drawing.Size(238, 45);
             this.verifiedText.TabIndex = 9;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.8F);
+            this.textBox1.Location = new System.Drawing.Point(337, 41);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(376, 71);
+            this.textBox1.TabIndex = 10;
+            this.textBox1.Text = "Nenshkrimi digjital i nje PDF fajlli dhe verifikimi i tij!";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Form1
             // 
@@ -127,6 +141,7 @@
             this.BackgroundImage = global::Projekti3.Properties.Resources.istockphoto_170958625_170667a;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1066, 546);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.verifiedText);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -153,6 +168,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.TextBox verifiedText;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

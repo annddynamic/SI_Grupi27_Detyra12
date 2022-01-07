@@ -94,22 +94,27 @@ namespace Projekti3
                                 }
                                 else
                                 {
-                                    verifiedText.Text = "Nenshkrimi nuk eshte valid";
+                                    verifiedText.Text = "Nenshkrimi nuk eshte valid!";
                                 }
                             }
                             else
                             {
-                                verifiedText.Text = "Nuk eshte i Certifikuar";
+                                verifiedText.Text = "Nuk eshte i Certifikuar!";
                             }
                         }
                     }
                     else
                     {
-                        verifiedText.Text = "Dokumenti nuk ka nenshkrim";
+                        verifiedText.Text = "Dokumenti nuk ka nenshkrim!";
 
                     }
                 }
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
