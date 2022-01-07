@@ -132,7 +132,6 @@
             this.textBox1.TabIndex = 10;
             this.textBox1.Text = "Nenshkrimi digjital i nje PDF fajlli dhe verifikimi i tij!";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Form1
             // 

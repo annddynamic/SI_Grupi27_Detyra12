@@ -30,7 +30,6 @@ namespace Projekti3
             if (openfileDialog.ShowDialog() == DialogResult.OK)
             {
                 this.pdfFilePath = openfileDialog.FileName;
-                //MessageBox.Show("Shtegu " + path +" Passwordi " + password);
             }
         }
 
@@ -59,7 +58,9 @@ namespace Projekti3
                     // Create any of the three signature types
                     signature.Certify(1, "Signature Reason", "andidika2001@gmail.com", "Ilir Durmishi", true, rect, docMdpSignature);
                     // Save digitally signed PDF file
-                    signature.Save("C:/Users/BUTON/source/repos/PDFSignature/Projekti3/Digitally Signed PDF.pdf");
+                    signature.Save("C:/Users/BUTON/Desktop/Projekti2/SI_Grupi27_Detyra12/Projekti3/Digitally Signed PDF.pdf");
+                    MessageBox.Show("Nenshkrimi u krye me sukses!");
+                    Password.Text = "";
                 }
             }
         }
@@ -112,9 +113,5 @@ namespace Projekti3
             }
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
