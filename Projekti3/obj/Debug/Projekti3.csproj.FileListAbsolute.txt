@@ -21,3 +21,4 @@ C:\Users\BUTON\Desktop\Projekti2\SI_Grupi27_Detyra12\Projekti3\obj\Debug\Projekt
 C:\Users\BUTON\Desktop\Projekti2\SI_Grupi27_Detyra12\Projekti3\obj\Debug\Projekti3.csproj.CopyComplete
 C:\Users\BUTON\Desktop\Projekti2\SI_Grupi27_Detyra12\Projekti3\obj\Debug\Projekti3.exe
 C:\Users\BUTON\Desktop\Projekti2\SI_Grupi27_Detyra12\Projekti3\obj\Debug\Projekti3.pdb
+C:\Users\BUTON\Desktop\Projekti2\SI_Grupi27_Detyra12\Projekti3\obj\Debug\Projekti3.csprojAssemblyReference.cache

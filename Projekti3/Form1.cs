@@ -83,39 +83,47 @@ namespace Projekti3
 
         private void button5_Click(object sender, EventArgs e)
         {
-            using (Document pdfDocument = new Document(this.verifyPdfPath))
+            if (this.verifyPdfPath==null) 
             {
-                using (PdfFileSignature signature = new PdfFileSignature(pdfDocument))
+                MessageBox.Show("Ju lutemi mbushni te gjitha vlerat");
+            }
+            else
+            {
+                using (Document pdfDocument = new Document(this.verifyPdfPath))
                 {
-                    IList<string> sigNames = signature.GetSignNames();
-                    if (sigNames.Count > 0) // Any signatures?
+                    using (PdfFileSignature signature = new PdfFileSignature(pdfDocument))
                     {
-                        if (signature.VerifySigned(sigNames[0] as string)) // Verify first one
+                        IList<string> sigNames = signature.GetSignNames();
+                        if (sigNames.Count > 0) // Any signatures?
                         {
-                            if (signature.IsCertified) // Certified?
+                            if (signature.VerifySigned(sigNames[0] as string)) // Verify first one
                             {
-                                if (signature.GetAccessPermissions() == DocMDPAccessPermissions.FillingInForms) // Get access permission
+                                if (signature.IsCertified) // Certified?
                                 {
-                                    // Do something
-                                    verifiedText.Text = "Nenshkrimi eshte valid!";
+                                    if (signature.GetAccessPermissions() == DocMDPAccessPermissions.FillingInForms) // Get access permission
+                                    {
+                                        // Do something
+                                        verifiedText.Text = "Nenshkrimi eshte valid!";
+                                    }
+                                    else
+                                    {
+                                        verifiedText.Text = "Nenshkrimi nuk eshte valid!";
+                                    }
                                 }
                                 else
                                 {
-                                    verifiedText.Text = "Nenshkrimi nuk eshte valid!";
+                                    verifiedText.Text = "Nuk eshte i Certifikuar!";
                                 }
                             }
-                            else
-                            {
-                                verifiedText.Text = "Nuk eshte i Certifikuar!";
-                            }
+                        }
+                        else
+                        {
+                            verifiedText.Text = "Dokumenti nuk ka nenshkrim!";
+
                         }
                     }
-                    else
-                    {
-                        verifiedText.Text = "Dokumenti nuk ka nenshkrim!";
-
-                    }
                 }
+
             }
         }
 
