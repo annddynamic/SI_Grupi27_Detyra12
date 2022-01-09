@@ -15,7 +15,6 @@ C:\Users\BUTON\Desktop\Projekti2\SI_Grupi27_Detyra12\Projekti3\bin\Debug\Projekt
 C:\Users\BUTON\Desktop\Projekti2\SI_Grupi27_Detyra12\Projekti3\bin\Debug\Projekti3.pdb
 C:\Users\BUTON\Desktop\Projekti2\SI_Grupi27_Detyra12\Projekti3\bin\Debug\Aspose.PDF.dll
 C:\Users\BUTON\Desktop\Projekti2\SI_Grupi27_Detyra12\Projekti3\bin\Debug\Aspose.PDF.xml
-C:\Users\BUTON\Desktop\Projekti2\SI_Grupi27_Detyra12\Projekti3\obj\Debug\Projekti3.csprojAssemblyReference.cache
 C:\Users\BUTON\Desktop\Projekti2\SI_Grupi27_Detyra12\Projekti3\obj\Debug\Projekti3.Form1.resources
 C:\Users\BUTON\Desktop\Projekti2\SI_Grupi27_Detyra12\Projekti3\obj\Debug\Projekti3.Properties.Resources.resources
 C:\Users\BUTON\Desktop\Projekti2\SI_Grupi27_Detyra12\Projekti3\obj\Debug\Projekti3.csproj.GenerateResource.cache

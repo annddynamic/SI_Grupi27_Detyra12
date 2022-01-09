@@ -45,22 +45,28 @@ namespace Projekti3
 
         private void button3_Click(object sender, EventArgs e)
         {
-           
-            using (Document pdfDocument = new Document(this.pdfFilePath))
+            if (this.pdfFilePath == null || this.certificatePath ==null || Password.Text == null)
             {
-                using (PdfFileSignature signature = new PdfFileSignature(pdfDocument))
+                MessageBox.Show("Ju lutemi mbushni te gjitha vlerat");
+            }
+            else
+            {
+                using (Document pdfDocument = new Document(this.pdfFilePath))
                 {
-                    PKCS7 pkcs = new PKCS7(this.certificatePath, Password.Text); // Use PKCS7/PKCS7Detached objects
-                    DocMDPSignature docMdpSignature = new DocMDPSignature(pkcs, DocMDPAccessPermissions.FillingInForms);
-                    System.Drawing.Rectangle rect = new System.Drawing.Rectangle(100, 100, 300, 100);
-                    // Set signature appearance
-                    signature.SignatureAppearance = @"C:/Users/BUTON/source/repos/test/Nenskhirmi-PDF/Untitled-1.jpg";
-                    // Create any of the three signature types
-                    signature.Certify(1, "Signature Reason", "andidika2001@gmail.com", "Ilir Durmishi", true, rect, docMdpSignature);
-                    // Save digitally signed PDF file
-                    signature.Save("C:/Users/BUTON/Desktop/Projekti2/SI_Grupi27_Detyra12/Projekti3/Digitally Signed PDF.pdf");
-                    MessageBox.Show("Nenshkrimi u krye me sukses!");
-                    Password.Text = "";
+                    using (PdfFileSignature signature = new PdfFileSignature(pdfDocument))
+                    {
+                        PKCS7 pkcs = new PKCS7(this.certificatePath, Password.Text); // Use PKCS7/PKCS7Detached objects
+                        DocMDPSignature docMdpSignature = new DocMDPSignature(pkcs, DocMDPAccessPermissions.FillingInForms);
+                        System.Drawing.Rectangle rect = new System.Drawing.Rectangle(100, 100, 300, 100);
+                        // Set signature appearance
+                        signature.SignatureAppearance = @"C:/Users/BUTON/source/repos/test/Nenskhirmi-PDF/Untitled-1.jpg";
+                        // Create any of the three signature types
+                        signature.Certify(1, "Signature Reason", "andidika2001@gmail.com", "Ilir Durmishi", true, rect, docMdpSignature);
+                        // Save digitally signed PDF file
+                        signature.Save("C:/Users/BUTON/Desktop/Projekti2/SI_Grupi27_Detyra12/Projekti3/Digitally Signed PDF.pdf");
+                        MessageBox.Show("Nenshkrimi u krye me sukses!");
+                        Password.Text = "";
+                    }
                 }
             }
         }
